@@ -1,0 +1,14 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio cache files
+.vs/
+*.user
+*.suo
+
+# Other files
+*.pdb
+*.log
+*.DS_Store
+Thumbs.db
