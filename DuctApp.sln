@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuctApp", "DuctApp.csproj", "{301E539D-1682-F795-0314-B1FDA5A81E01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuctApp", "DuctApp.csproj", "{3382C623-C740-0B85-1BDD-6E2CE580A3CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,15 +10,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{301E539D-1682-F795-0314-B1FDA5A81E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{301E539D-1682-F795-0314-B1FDA5A81E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{301E539D-1682-F795-0314-B1FDA5A81E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{301E539D-1682-F795-0314-B1FDA5A81E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3382C623-C740-0B85-1BDD-6E2CE580A3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3382C623-C740-0B85-1BDD-6E2CE580A3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3382C623-C740-0B85-1BDD-6E2CE580A3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3382C623-C740-0B85-1BDD-6E2CE580A3CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F744EE63-ADBB-40B5-A036-9E1E416350D5}
+		SolutionGuid = {92D879E9-BFF5-4546-958E-D26CF48AF363}
 	EndGlobalSection
 EndGlobal

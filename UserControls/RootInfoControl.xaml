@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="DuctApp.UserControls.RootInfoControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DuctApp">
+    <Border Grid.Column="1" Margin="0,0,0,40" BorderBrush="Gray" BorderThickness="1" Grid.ColumnSpan="2">
+        <DockPanel LastChildFill="True">
+            <TextBlock DockPanel.Dock="Bottom"  TextAlignment="Left" Background="LightGray" TextWrapping="Wrap">
+                    <Run Text="Наименование шаблона" FontWeight="Bold"/>
+                    <LineBreak/>
+                    <Run Text="Используется для отображения имени данного шаблонного в структуре шаблона и в структуре проекта. Нужно больше текста для проверки переноса строк"/>
+            </TextBlock>
+            <StackPanel Margin="0,0,0,0" VerticalAlignment="Top" Background="White">
+                <Grid Background="LightGray">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Vertical" Margin="5" VerticalAlignment="Top">
+                        <Expander Header="Наименование" IsExpanded="True">
+                            <Expander.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}" FontWeight="Bold" FontSize="12"/>
+                                </DataTemplate>
+                            </Expander.HeaderTemplate>
+                            <DataGrid HeadersVisibility="None" AutoGenerateColumns="False" Background="White" Width="410" BorderThickness="0" FontSize="12">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Binding="{Binding Component}" IsReadOnly="True" Width="*"/>
+                                    <DataGridTemplateColumn Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBox Text="Нержавейка 1 мм" BorderThickness="0"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                                <DataGrid.Items>
+                                    <local:ComponentData Component="Наименование шаблона"/>
+                                </DataGrid.Items>
+                            </DataGrid>
+                        </Expander>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </DockPanel>
+    </Border>
+</UserControl>

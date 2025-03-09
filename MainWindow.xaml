@@ -4,9 +4,33 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DuctApp"
+        xmlns:userControls="clr-namespace:DuctApp.UserControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Редактирование шаблона трассы воздуховода" Height="450" Width="800">
 
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="330"/>
+            <ColumnDefinition Width="431*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <ContentControl Name="ContentArea" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2"/>
+        <Border Grid.Column="0" Margin="10,10,10,50" BorderBrush="Gray" BorderThickness="1">
+            <StackPanel Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <TreeView x:Name="ElementTree" SelectedItemChanged="ElementTree_SelectedItemChanged" BorderBrush="Transparent" FontSize="12">
+                    <TreeViewItem Header="Шаблон трассы воздуховода: Нержавейка 1 мм" IsExpanded="True" Tag="Root">
+                        <TreeViewItem Header="Элементы трассы" IsExpanded="True" Tag="Elements">
+                            <TreeViewItem Header="Воздуховод"/>
+                            <TreeViewItem Header="Отвод"/>
+                            <TreeViewItem Header="Тройник"/>
+                            <TreeViewItem Header="Крестовина"/>
+                            <TreeViewItem Header="Переход"/>
+                            <TreeViewItem Header="Утка"/>
+                            <TreeViewItem Header="Заглушка"/>
+                        </TreeViewItem>
+                    </TreeViewItem>
+                </TreeView>
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>
